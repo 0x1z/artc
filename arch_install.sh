@@ -29,7 +29,8 @@ pacstrap /mnt base base-devel linux linux-firmware intel-ucode git vim
 genfstab -U /mnt >> /mnt/etc/fstab
 sed '1,/^#part2$/d' `basename $0` > /mnt/arch_install2.sh
 chmod +x /mnt/arch_install2.sh
-arch-chroot /mnt ./arch_install2.sh
+arch-chroot /mnt 
+exec arch_install2.sh
 exit
 
 #part2
@@ -99,8 +100,8 @@ echo "Pre-Installation Finish Reboot now after genfstabbing last command"
 genfstab -U /mnt >> /mnt/etc/fstab
 
 
-rm /bin/sh
-ln -s dash /bin/sh
+#rm /bin/sh
+#ln -s dash /bin/sh
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 echo "Enter Username: "
 read username

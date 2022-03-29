@@ -1,4 +1,5 @@
 #part1
+#reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 printf '\033c'
 echo "Welcome to Arch Linux Magic Script"
 sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf

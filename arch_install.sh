@@ -29,8 +29,7 @@ pacstrap /mnt base base-devel linux linux-firmware intel-ucode git vim
 genfstab -U /mnt >> /mnt/etc/fstab
 sed '1,/^#part2$/d' `basename $0` > /mnt/arch_install2.sh
 chmod +x /mnt/arch_install2.sh
-arch-chroot /mnt 
-./arch_install2.sh
+arch-chroot /mnt ./arch_install2.sh
 exit
 
 #part2

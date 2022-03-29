@@ -11,24 +11,20 @@ echo "Enter the linux partition: "
 read partition
 mkfs.ext4 $partition 
 read -p "Did you also created efi partition? [yn]" answer
-
 if [[ $answer = y ]] ; then
   echo "Enter EFI partition: "
   read efipartition
   mkfs.vfat -F 32 $efipartition
 fi
-
 if [[ $answer = n ]] ; then
   echo "Enter EFI partition: "
   read efipartition
   mkdir -p /mnt/boot/efi
   mount $efipartition /mnt/boot/efi 
 fi
-
 mount $partition /mnt 
 pacstrap /mnt base base-devel linux linux-firmware intel-ucode git vim
 genfstab -U /mnt >> /mnt/etc/fstab
-
 sed '1,/^#part2$/d' arch_install.sh > /mnt/arch_install2.sh
 chmod +x /mnt/arch_install2.sh
 arch-chroot /mnt ./arch_install2.sh

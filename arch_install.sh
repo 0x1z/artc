@@ -30,7 +30,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 sed '1,/^#part2$/d' `basename $0` > /mnt/arch_install2.sh
 chmod +x /mnt/arch_install2.sh
 arch-chroot /mnt 
-exec arch_install2.sh
+./arch_install2.sh
 exit
 
 #part2

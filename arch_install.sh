@@ -1,9 +1,11 @@
-#Script 1
+#part1
+printf '\033c'
 echo "Welcome to Arch Linux Magic Script"
 sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 pacman --noconfirm -Sy archlinux-keyring
 loadkeys us
 timedatectl set-ntp true
+lsblk
 echo "Enter the drive: "
 read drive
 cfdisk $drive 
@@ -25,10 +27,10 @@ fi
 mount $partition /mnt 
 pacstrap /mnt base base-devel linux linux-firmware intel-ucode git vim
 genfstab -U /mnt >> /mnt/etc/fstab
-sed '1,/^#part2$/d' arch_install.sh > /mnt/arch_install2.sh
+sed '1,/^#part2$/d' `basename $0` > /mnt/arch_install2.sh
 chmod +x /mnt/arch_install2.sh
 arch-chroot /mnt ./arch_install2.sh
-exit 
+exit
 
 #part2
 printf '\033c'

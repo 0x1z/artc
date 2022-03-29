@@ -136,6 +136,13 @@ sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
 
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R radiation:radiation ./yay-git
+cd yay-git
+makepkg -si
+yay -S ttf-joypixels
+
+
 
 
 sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox simplescreenrecorder obs-studio vlc papirus-icon-theme kdenlive materia-kde

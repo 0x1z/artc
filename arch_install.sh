@@ -76,8 +76,6 @@ systemctl enable tlp
 systemctl enable firewalld
 systemctl enable acpid
 
-rm /arch_install2.sh
-
 #visudo
 #EDITOR=vim visudo
 #uncomment wheel

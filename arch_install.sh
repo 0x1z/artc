@@ -148,16 +148,16 @@ read username
 chown -R $username:$username ./yay-git
 cd yay-git
 makepkg -si
-yay --noconfirm -S layan-kde-git spotify-adblock google-chrome brave visual-studio-code-bin sublime-text-4 xdman nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels
-
-
-
 
 sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox simplescreenrecorder obs-studio vlc papirus-icon-theme kdenlive materia-kde
 
 # sudo flatpak install -y spotify
 
 sudo systemctl enable sddm
+
+yay --noconfirm -S layan-kde-git spotify-adblock google-chrome brave visual-studio-code-bin sublime-text-4 nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels
+
+
 /bin/echo -e "fix sudo privileges after reboot"
 /bin/echo -e "part3 end here"
 exit

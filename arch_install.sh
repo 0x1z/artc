@@ -157,4 +157,5 @@ sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox simplescree
 
 sudo systemctl enable sddm
 /bin/echo -e "fix sudo privileges after reboot"
+/bin/echo -e "part3 end here"
 exit

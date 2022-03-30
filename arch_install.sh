@@ -142,8 +142,8 @@ sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mir
 #sudo firewall-cmd --reload
 
 
-sudo git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R radiation:radiation ./yay-git
+git clone https://aur.archlinux.org/yay-git.git
+chown -R $username:$username ./yay-git
 cd yay-git
 makepkg -si
 yay -S ttf-joypixels

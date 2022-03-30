@@ -148,7 +148,7 @@ read username
 chown -R $username:$username ./yay-git
 cd yay-git
 makepkg -si
-yay -S ttf-joypixels
+yay --noconfirm -S layan-kde-git spotify-adblock google-chrome brave visual-studio-code-bin sublime-text-4 xdman nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels
 
 
 

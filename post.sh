@@ -3,7 +3,7 @@ sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
 #pacman packages
-sudo pacman -S zsh zsh-completions
+sudo pacman -S zsh zsh-completions neovim 
 
 
 
@@ -27,4 +27,4 @@ sed -i -e 's/plugins=(.*)/plugins=(git archlinux zsh-syntax-highlighting zsh-aut
 #command to comment no sudo password
 #sudo sed -i 's/^%wheel ALL=(ALL) NOPASSWD: ALL/#%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
 #append without NOPASSWD
-#echo "%wheel ALL=(ALL): ALL" >> /etc/sudoers
+#echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers

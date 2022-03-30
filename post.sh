@@ -24,7 +24,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 
 
+#append without NOPASSWD
+#sudo echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
 #command to comment no sudo password
 #sudo sed -i 's/^%wheel ALL=(ALL) NOPASSWD: ALL/#%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
-#append without NOPASSWD
-#echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+

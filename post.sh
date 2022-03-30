@@ -3,11 +3,12 @@ sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
 #pacman packages
-sudo pacman -S zsh zsh-completions neovim nodejs npm libreoffice mpv sxiv
+sudo pacman -S zsh zsh-completions neovim nodejs npm libreoffice mpv sxiv youtube-dl
 
 
-
-
+#yt-dlp installation
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
 
 
 

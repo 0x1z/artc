@@ -143,6 +143,8 @@ sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mir
 
 
 git clone https://aur.archlinux.org/yay-git.git
+echo "Enter Username: "
+read username
 chown -R $username:$username ./yay-git
 cd yay-git
 makepkg -si

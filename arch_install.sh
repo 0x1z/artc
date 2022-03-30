@@ -1,5 +1,6 @@
 #part1
 lsblk
+echo "Just make efi and linux partition because swap will be made from linux hdd partititon"
 read -p "Do you want reflector mirror update? [yn]" reflect
 if [[ $reflect = y ]] ; then
   reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist

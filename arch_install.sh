@@ -135,9 +135,9 @@ sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mir
 
 
 #sudo systemctl start firewalld
-sudo firewall-cmd --add-port=1025-65535/tcp --permanent
-sudo firewall-cmd --add-port=1025-65535/udp --permanent
-sudo firewall-cmd --reload
+#sudo firewall-cmd --add-port=1025-65535/tcp --permanent
+#sudo firewall-cmd --add-port=1025-65535/udp --permanent
+#sudo firewall-cmd --reload
 
 
 sudo git clone https://aur.archlinux.org/yay-git.git

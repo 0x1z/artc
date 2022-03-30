@@ -1,11 +1,12 @@
 #part1
+lsblk
 read -p "Do you want reflector mirror update? [yn]" reflect
 if [[ $reflect = y ]] ; then
   reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 fi
 #reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 printf '\033c'
-echo "Welcome to Arch Linux Magic Script"
+echo "Install beggining"
 sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 pacman --noconfirm -Sy archlinux-keyring
 loadkeys us

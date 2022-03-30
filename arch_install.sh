@@ -133,7 +133,7 @@ sudo hwclock --systohc
 
 # sudo reflector -c India Germany -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 # sudo reflector --country India,France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist                                        ─╯
+sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 
 #sudo systemctl start firewalld

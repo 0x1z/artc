@@ -1,4 +1,8 @@
 #part1
+read -p "Do you want reflector mirror update? [yn]" reflect
+if [[ $reflect = y ]] ; then
+  reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+fi
 #reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 printf '\033c'
 echo "Welcome to Arch Linux Magic Script"

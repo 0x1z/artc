@@ -155,7 +155,7 @@ sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox simplescree
 
 sudo systemctl enable sddm
 
-yay --noconfirm -S layan-kde-git spotify-adblock google-chrome brave visual-studio-code-bin sublime-text-4 nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels
+yay -S layan-kde-git spotify-adblock google-chrome brave visual-studio-code-bin sublime-text-4 nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels
 
 
 /bin/echo -e "fix sudo privileges after reboot"

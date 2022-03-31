@@ -1,3 +1,5 @@
+
+echo "Make a .zshrc in home directory before executing"
 #adding .zshrc
 echo "Enter Username: "
 read username

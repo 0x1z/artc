@@ -3,7 +3,7 @@ sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
 #pacman packages
-sudo pacman --noconfirm -S zsh zsh-completions neovim nodejs npm libreoffice mpv sxiv youtube-dl neofetch htop
+sudo pacman --noconfirm -S zsh zsh-completions neovim nodejs npm libreoffice mpv sxiv youtube-dl neofetch htop openvpn
 
 #changing shell
 sudo chsh -s /bin/zsh

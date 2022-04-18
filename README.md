@@ -1,6 +1,13 @@
 connect wifi:-iwctl
 station wlan0 connect wifi name in quotes.
 
+execute 1st script in live iso
+
+execute 2nd after login
+execute 3rd as :-
+step 1-sudo su
+step2=execute the script.
+
 sometimes pacman  ring error occurs so use the pacman-key (3 commands are there 2 works in order of init and populate)command.
 pacman -Sy and pacman -S git
 git clone repo make it executable
